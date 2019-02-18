@@ -24,7 +24,7 @@ import { MainNavigationComponent } from './navigations/main-navigation/main-navi
 import { AdminNavigationComponent } from './navigations/admin-navigation/admin-navigation.component';
 import { AdminComponent } from './views/admin/admin.component';
 import { AdminSidebarComponent } from './components/admin-sidebar/admin-sidebar.component';
-
+import { AngularFireStorageModule } from '@angular/fire/storage'; 
 
 @NgModule({
   declarations: [
@@ -50,7 +50,8 @@ import { AdminSidebarComponent } from './components/admin-sidebar/admin-sidebar.
     AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireStorageModule,  
   ],
   providers: [
     AngularFireAuth,
