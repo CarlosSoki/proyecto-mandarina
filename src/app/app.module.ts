@@ -24,7 +24,9 @@ import { MainNavigationComponent } from './navigations/main-navigation/main-navi
 import { AdminNavigationComponent } from './navigations/admin-navigation/admin-navigation.component';
 import { AdminComponent } from './views/admin/admin.component';
 import { AdminSidebarComponent } from './components/admin-sidebar/admin-sidebar.component';
-import { AngularFireStorageModule } from '@angular/fire/storage'; 
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { CarritoComponent } from './components/carrito/carrito.component';
+import { ListadeseoComponent } from './components/listadeseo/listadeseo.component'; 
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     MainNavigationComponent,
     AdminNavigationComponent,
     AdminComponent,
-    AdminSidebarComponent
+    AdminSidebarComponent,
+    CarritoComponent,
+    ListadeseoComponent
   ],
   imports: [
     BrowserModule,

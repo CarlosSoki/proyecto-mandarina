@@ -11,20 +11,24 @@ import { Page404Component } from './components/page404/page404.component';
 import { MainNavigationComponent } from './navigations/main-navigation/main-navigation.component';
 import { AdminNavigationComponent } from './navigations/admin-navigation/admin-navigation.component';
 import { AdminComponent } from './views/admin/admin.component';
+import { CarritoComponent } from './components/carrito/carrito.component';
+import { ListadeseoComponent } from './components/listadeseo/listadeseo.component';
 
 const routes: Routes = [
   { path: '', children:[
     { path: '',  component: HomeComponent },
     { path: 'offers', component: OffersComponent},
-    { path: 'book:/id', component: DetailsBookComponent}, 
+    { path: 'producto:/id', component: DetailsBookComponent}, 
     { path: 'user/login', component: LoginComponent},
     { path: 'user/register', component: RegisterComponent},
-    { path: 'user/profile', component: ProfileComponent}
+    { path: 'user/profile', component: ProfileComponent},
+    { path: 'carrito', component: CarritoComponent},
+    { path: 'listadeseo', component: ListadeseoComponent}
   ], component: MainNavigationComponent 
   },
   {path:'admin', children:[
     { path: '', component: AdminComponent},
-    { path: 'list-books', component: ListBooksComponent},
+    { path: 'list-book', component: ListBooksComponent}, //Esta es tu lista rafa
   ], component: AdminNavigationComponent
 
   },

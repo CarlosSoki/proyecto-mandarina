@@ -44,7 +44,7 @@ export class RegisterComponent implements OnInit {
             displayName: '',
             photoURL: this.inputImageUser.nativeElement.value
           }).then( () => {
-            this.router.navigate(['admin/list-books']);
+            this.router.navigate(['']);
           }).catch( (error) => console.log('error', error));
         }
       });
@@ -66,7 +66,7 @@ export class RegisterComponent implements OnInit {
   }
 
   onLoginRedirect(): void {
-    this.router.navigate(['admin/list-books']); 
+    this.router.navigate(['']); 
   }
 
 }
